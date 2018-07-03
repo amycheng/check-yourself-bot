@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "a GitHub app that gently notifies you of failed builds",
   "main": "index.js",
+  "engines": {
+    "node": "8.9.3"
+  },
   "scripts": {
     "test": "jest",
     "start": "probot run ./index.js",
