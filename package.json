@@ -1,0 +1,40 @@
+{
+  "name": "check-yourself-bot",
+  "version": "1.0.0",
+  "description": "a GitHub app that gently notifies you of failed builds",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "probot run ./index.js",
+    "lint": "eslint *.js"
+  },
+   "jest": {
+     "collectCoverage": true,
+     "coveragePathIgnorePatterns": [
+      "./__test__/fixtures.js"
+     ]
+   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amycheng/check-yourself-bot.git"
+  },
+  "author": "Amy Cheng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amycheng/check-yourself-bot/issues"
+  },
+  "homepage": "https://github.com/amycheng/check-yourself-bot#readme",
+  "devDependencies": {
+    "eslint": "^5.0.1",
+    "jest": "^23.2.0",
+    "smee-client": "^1.0.2"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "dotenv": "^6.0.0",
+    "eslint-plugin-jest": "^21.17.0",
+    "js-yaml": "^3.12.0",
+    "probot": "^6.2.1",
+    "strip-ansi": "^4.0.0"
+  }
+}
