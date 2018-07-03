@@ -16,7 +16,7 @@ describe('utils for generating issues', () => {
 
     let testString = lib.generateIssueBody(mockBuildTaskName, mockBuildMsg);
     // We are not comparing strings directly because the spacing is inconsistent
-    // across different the same template literals in different files. Jest is
+    // with the same template literals across different files. Jest is
     // sensitive to these inconsistencies.
     expect(testString.includes('## '+mockBuildTaskName)).toBeTruthy();
     // Make sure the string contains backticks
